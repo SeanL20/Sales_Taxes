@@ -1,3 +1,5 @@
+require_relative 'product'
+
 class ProductListing
 	attr_accessor :products
 
