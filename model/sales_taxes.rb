@@ -34,10 +34,10 @@ class SalesTaxes
 			tax = get_tax_amount(total_product_price, product_tax_percentage)
 
 			# gets the total product price with tax and round it up to 2 decimal places.
-			total_product_price_with_tax = (total_product_price + tax).round(2)
+			total_product_price_with_tax = total_product_price + tax
 
 			# gets the total price of all the products with tax and round it up to 2 decimal places.
-			total_price = (total_price + total_product_price_with_tax).round(2)
+			total_price = total_price + total_product_price_with_tax
 
 			# Get the total tax amount.
 			tax_amount = tax_amount + tax
@@ -66,7 +66,7 @@ class SalesTaxes
 		end
 
 		# returns the tax percentage
-		return tax_percent
+		return tax_percent.round(2)
 	end
 
 	def get_tax_amount(product_price, tax_percent)
