@@ -11,9 +11,9 @@ When I purchase items, I receive a receipt that lists the name of all the items 
 ## Solution
 
 I created 3 classes which are the **sales taxes**, **product listing** and **product** classes where: 
-	- **sales taxes** would read the CSV file and create a **product listing** class and multiple **product** class depending on the CSV File as well as calculating the total price and tax amount.
-	- **product listing** class would store an array of **product** classes and function for creating new **product** class and storing it in the **product listing**.
-	- **product** class would be a class that stores the product name, quantity and price.
+- **sales taxes** would read the CSV file and create a **product listing** class and multiple **product** class depending on the CSV File as well as calculating the total price and tax amount.
+- **product listing** class would store an array of **product** classes and function for creating new **product** class and storing it in the **product listing**.
+- **product** class would be a class that stores the product name, quantity and price.
 
 The data CSV files are stored in the data folder.
 
